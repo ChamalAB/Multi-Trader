@@ -14,11 +14,13 @@ The Expert Advisors main functions:
 2. Actively manage trades when the plug-in loaded to the client terminal. All trade details are stored in Terminal's Global Variables threfore the Expert Advisor will manage unlimited amount of trading setups across multiple currency pairs even after crash/re-start of the computer.
 
 
-Minor Features:
-1. Input validation - In price mode, the price and lots is required to insert precisely. Therefore it will eleminate trader's exposure to rounding off gains/losses.  or simply the trader can resort to default values set at the initialization which is more convenient.
+Features:
+1. Ability to handle 2,3,4,5 Digit brokers - The EA will determine the broker type and PiP/Point convetions are calculated automatically. (ex- 4/2 Digits broker --> 1 pip= 1 point, 5/3 Digits broker --> 1 pip= 10 points)
 
-2. Trade pre-checks - The EA will not initiate trades if the brokers minimum distance rules are broken even by one single trade. This will ensure that the trader will not end up partially opening trades(failing to implement the trading strategy 100%).
+2. Input validation - In price mode, the price and lots is required to insert precisely. Therefore it will eleminate trader's exposure to rounding off gains/losses.  or simply the trader can resort to default values set at the initialization which is more convenient.
 
-3. Built in visual improvements - Most EAs will come with separate template files that the user is required to install and activate/deactivate manually before the EA is loaded. However Multi trader comes with built-in theme where it applies its theme/ dashboards and buttons at initialization and restore to the default state when the plugin is removed. Also It will remove all the objects placed by the EA at exit.
+3. Trade pre-checks - The EA will not initiate trades if the brokers minimum distance rules are broken even by one single trade. This will ensure that the trader will not end up partially opening trades(failing to implement the trading strategy 100%).
+
+4. Built in visual improvements - Most EAs will come with separate template files that the user is required to install and activate/deactivate manually before the EA is loaded. However Multi trader comes with built-in theme where it applies its theme/ dashboards and buttons at initialization and restore to the default state when the plugin is removed. Also It will remove all the objects placed by the EA at exit.
  
-4. Cleaning obsolete Global variables - The client terminal automatically deletes global variables which are not used for 30 days. However The EA cleans obsolete global variables stored in the terminal at every de-initialization.
+5. Cleaning obsolete Global variables - The client terminal automatically deletes global variables which are not used for 30 days. However The EA cleans obsolete global variables stored in the terminal at every de-initialization.
